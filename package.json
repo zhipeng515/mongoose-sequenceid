@@ -1,6 +1,6 @@
 {
   "name": "mongoose-sequenceid",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "使用flocon-new，生成mongo数据库唯一ID",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "https://github.com/zhipeng515/mongoose-sequenceid.git"
   },
   "dependencies": {
-    "flocon-new": "0.0.6"
+    "flocon-new": "~0.*"
   },
   "author": "",
   "license": "ISC"
