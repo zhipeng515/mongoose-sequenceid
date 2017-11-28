@@ -3,12 +3,12 @@
 var sequence   = require('flocon-new')
 
 module.exports = function(schema) {
-    schema.add({ id: { type: Number, index: true, unique: true, default: -1 } });
+    schema.add({ id: { type: String, index: true, unique: true, default: '' } });
     schema.add({ createdAt: { type: Date, default: Date.now } });
 
 
     schema.pre('save', function (next) {
-        if(this.isNew && this.id == -1 ) {
+        if(this.isNew && this.id == '') {
             this.id = sequence.snow();
         }
         next();
